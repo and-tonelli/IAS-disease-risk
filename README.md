@@ -1,1 +1,1 @@
-Assessing the disease risk associated with invasive mammal species in Europe
+Assessing the disease risk associated with invasive mammal species
