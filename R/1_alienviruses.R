@@ -117,15 +117,16 @@ dama_countries <- read.csv("data/DAMA_GADM.csv")
 
 setdiff(dama_countries$GID_0, Countries_mammals$GID_0)
 
-# HongKong_mammals <- Countries_mammalsold %>% filter(countries == "Hong Kong") %>% 
-#   mutate(GID_0 = "HKG",
-#          COUNTRY = "Hong Kong",
-#          CONTINENT = "Asia") %>% 
-#   rename("NAME_0" = countries,
-#          "Binomial" = species) %>% 
-#   mutate(Binomial = str_replace(Binomial, "_", " "))
-# 
-# Countries_mammals <- rbind(Countries_mammals %>% rename("Binomial" = species), HongKong_mammals)
+HongKong_mammals <- Countries_mammalsold %>% filter(countries == "Hong Kong") %>%
+  mutate(GID_0 = "HKG",
+         COUNTRY = "Hong Kong",
+         CONTINENT = "Asia") %>%
+  rename("NAME_0" = countries,
+         "Binomial" = species)
+
+Countries_mammals <- rbind(Countries_mammals %>% rename("Binomial" = species), HongKong_mammals)
+
+write.csv(Countries_mammals, "data/Mammals_GADMcountries_final.csv", row.names = F)
 
 dama_countries2 <- dama_countries %>% 
   distinct(Binomial, GID_0) %>% 
