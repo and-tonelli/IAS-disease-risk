@@ -128,3 +128,25 @@ ShapeFile[1:250,] %>%
 
 ggsave("AllRanges.jpeg")
 
+# Demonstrating filtering ####
+
+DataList %>% 
+  last %>% 
+  graph_from_data_frame(directed = F) %>% 
+  as_tbl_graph %>% 
+  activate(edges) %>% 
+  filter(countries == "CHN")
+
+DataList %>% 
+  last %>% 
+  graph_from_data_frame(directed = F) %>% 
+  as_tbl_graph %>% 
+  activate(edges) %>% 
+  mutate(EdgeWeight = 1) %>% dplyr::select(EdgeWeight) %>% 
+  # group_by(countries) %>% 
+  simplify(edge.attr.comb = "sum")
+  filter(countries == "CHN")
+
+
+
+
