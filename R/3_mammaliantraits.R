@@ -1,11 +1,12 @@
 # Retrieving mammalian traits and computing pairwaise distances
-
 require(tidyverse)
 require(usdm)
 require(magrittr)
 require(readxl)
 '%!in%' <- function(x, y)!('%in%'(x, y)) # %!in%
 theme_set(theme_bw())
+
+# heavy files at https://drive.google.com/drive/folders/1zqe7K-6qv-6VE_uvHOypio8qH-zts5D_
 
 mammals_with_AOH <- readRDS("Data/AOH_terrestrialspecies.rds")
 
