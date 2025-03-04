@@ -306,7 +306,31 @@ ExtentList <-
                   YMax = .x@ymax)) %>% 
   bind_rows(.id = "Species")
 
+BlankMatrix <- matrix(NA, nrow = nrow(ExtentList), ncol = nrow(ExtentList))
 
+i <- 1
+
+for(i in 1:nrow(ExtentList)){
+  
+  ExtentList[i,] %>% print
+  
+  for(j in i:nrow(ExtentList)){
+    
+    ifelse(
+      
+      ExtentList[i,"YMin"] > ExtentList[j, "YMax"], 0,
+      
+      ifelse(
+        
+        ExtentList[i,"XMin"] > ExtentList[j, "XMax"], 0,
+        
+      )
+      
+    )
+    
+  }
+  
+}
 
 
 
