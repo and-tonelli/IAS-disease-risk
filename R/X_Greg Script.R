@@ -130,23 +130,124 @@ ggsave("AllRanges.jpeg")
 
 # Demonstrating filtering ####
 
-DataList %>% 
-  last %>% 
+VIRION_DATA %>% 
   graph_from_data_frame(directed = F) %>% 
   as_tbl_graph %>% 
   activate(edges) %>% 
-  filter(countries == "CHN")
+  filter(Detection_Antibodies == 1)
 
-DataList %>% 
-  last %>% 
+VIRION_DATA[c(1, 10)] %>% 
   graph_from_data_frame(directed = F) %>% 
   as_tbl_graph %>% 
   activate(edges) %>% 
-  mutate(EdgeWeight = 1) %>% dplyr::select(EdgeWeight) %>% 
-  # group_by(countries) %>% 
-  simplify(edge.attr.comb = "sum")
+  # mutate(EdgeWeight = 1) %>% dplyr::select(EdgeWeight) %>% 
+  group_by(to) %>%
+  simplify(edge.attr.comb = "sum") %>% 
   filter(countries == "CHN")
 
+plot_data <- VIRION_DATA[1:1000, c(1, 10)] %>%
+  rename(from = Harmonised_host, to = VirusFamily) %>%
+  as.data.frame()
+
+# Create the graph
+graph <- graph_from_data_frame(plot_data, directed = FALSE) %>% 
+  as_tbl_graph()
+
+BipartiteGraph <- 
+  VIRION_DATA %>%
+  filter(HostClass == "mammalia")
+  select(Host = Harmonised_host, VirusFamily) %>% 
+  table() %>% 
+  graph_from_incidence_matrix()
+
+# Unipartite graph species-species (edge is sharing)
+BipartiteGraph %>% 
+  bipartite.projection() %>% 
+  extract2("proj1") %>% 
+  as_tbl_graph %>% 
+  ggraph(layout = "kk") + 
+  geom_edge_link(aes(edge_alpha = 0.5), show.legend = FALSE) + 
+  geom_node_point(size = 1, color = "firebrick") + 
+  geom_node_text(aes(label = name), repel = TRUE, size = 3) + 
+  theme_void()
+
+# Graphs of target viral families
+vir_tab <- read_csv("Data/vir_tab_long_final.csv")
+
+alien_viruses <- vir_tab %>% pull(virus) %>% unique
+target_fams <- VIRION_DATA %>% filter(Virus %in% alien_viruses) %>% pull(VirusFamily) %>% unique
+target_genera <- VIRION_DATA %>% filter(Virus %in% alien_viruses & !is.na(VirusGenus)) %>% pull(VirusGenus) %>% unique
+
+VIRION_DATA <- read.csv("Data/Virion_mammals.csv")
+
+VIRION_DATA %>%
+  filter(HostClass == "mammalia", VirusGenus %in% target_genera) %>% 
+  select(Host, VirusGenus) %>% 
+  table() %>% 
+  graph_from_incidence_matrix() %>% 
+  bipartite.projection() %>% 
+  extract2("proj1") %>% 
+  as_tbl_graph %>% # weight is how many viral genera they share
+  activate(edges) %>% 
+  ggraph(layout = "kk") + 
+  geom_edge_link(aes(edge_alpha = 0.5), show.legend = FALSE) + 
+  geom_node_point(size = 1, color = "firebrick") + 
+  geom_node_text(aes(label = name), repel = TRUE, size = 3) + 
+  theme_void()
+
+host_graph <- VIRION_DATA %>%
+  filter(HostClass == "mammalia", VirusGenus %in% target_genera) %>% 
+  select(Host, VirusGenus) %>% 
+  table() %>% 
+  graph_from_incidence_matrix() %>% 
+  bipartite.projection() %>% 
+  extract2("proj1")
+
+host_gen_tab <- VIRION_DATA %>%
+  filter(HostClass == "mammalia", VirusGenus %in% target_genera) %>% 
+  select(Host, VirusGenus) %>% 
+  table()
+
+edges <- get.edgelist(host_graph)
+virus_genera <- apply(edges, 1, function(e) {
+  shared_gen <- intersect(
+    names(which(host_gen_tab[e[1], ] > 0)),
+    names(which(host_gen_tab[e[2], ] > 0))
+  )
+  paste(shared_gen, collapse = ", ")
+})
+
+# Store Vir Gen in the edge
+E(host_graph)$ViralGen <- virus_genera
 
 
+final_host_graph <- as_tibble(as_data_frame(host_graph)) %>%
+  separate_rows(ViralGen, sep = ", ") %>% 
+  graph_from_data_frame %>% 
+  as_tbl_graph
+
+edge_counts <- final_host_graph %>%
+  activate(edges) %>%
+  as_tibble() %>%
+  group_by(ViralGen) %>%
+  summarise(n_edges = n(), .groups = "drop")
+
+# Join edge_counts to graph
+final_host_graph <- final_host_graph %>%
+  activate(edges) %>%
+  left_join(edge_counts, by = "ViralGen") %>%
+  activate(edges) %>%
+  mutate(ViralGen = paste0(ViralGen, " (", n_edges, " edges)"))
+
+set.seed(157)
+ggraph(final_host_graph, layout = "kk") + #fr
+  geom_edge_link(edge_alpha = 0.2, color = "steelblue4") +
+  geom_node_point(size = 0.5, color = "grey", alpha = 0.5) +
+  # geom_node_text(aes(label = name), repel = TRUE, size = 3) +
+  facet_wrap(~ViralGen, scales = "free", nrow = 4, ncol = 5) +
+  theme(strip.text = element_text(
+    size = 10))+
+  theme_void()
+
+# ggsave("m/ViralGeneraEdges.jpeg", width = 9, height = 6.5, dpi = 600)
 
