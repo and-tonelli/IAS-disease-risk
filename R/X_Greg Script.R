@@ -156,7 +156,7 @@ graph <- graph_from_data_frame(plot_data, directed = FALSE) %>%
 BipartiteGraph <- 
   VIRION_DATA %>%
   filter(HostClass == "mammalia")
-  select(Host = Harmonised_host, VirusFamily) %>% 
+select(Host = Harmonised_host, VirusFamily) %>% 
   table() %>% 
   graph_from_incidence_matrix()
 
@@ -250,4 +250,64 @@ ggraph(final_host_graph, layout = "kk") + #fr
   theme_void()
 
 # ggsave("m/ViralGeneraEdges.jpeg", width = 9, height = 6.5, dpi = 600)
+
+
+# Looking at the filtered rasters ####
+
+library(raster)
+
+RasterList <- 
+  "Data/MAMMALS_5km_final/Mammals_carnivora" %>% 
+  dir_ls() %>% 
+  map(raster)
+
+names(RasterList) <- 
+  "Data/MAMMALS_5km_final/Mammals_carnivora" %>% 
+  list.files
+
+RasterList[[1]] %>% plot
+RasterList[[2]] %>% plot
+
+RasterList$Panthera_leo.tif %>% plot
+
+RasterList %>% 
+  map(values)
+
+RasterSums <- 
+  RasterList %>% 
+  map(values) %>% 
+  map_dbl(sum)
+
+# Trying to eliminate non-extent overlaps ####
+
+library(sf)
+
+SFList <- 
+  "Data/DAMA Individual Species" %>% 
+  dir_ls() %>% 
+  map(st_read)
+
+names(SFList) <- 
+  "Data/DAMA Individual Species" %>% 
+  list.files %>% 
+  str_remove_all(".tif$")
+
+library(ggregplot)
+
+ExtentGet
+GetExtent
+
+ExtentList <- 
+  SFList %>% 
+  map(raster::extent) %>% 
+  map(~data.frame(XMin = .x@xmin,
+                  XMax = .x@xmax,
+                  YMin = .x@ymin,
+                  YMax = .x@ymax)) %>% 
+  bind_rows(.id = "Species")
+
+
+
+
+
 
