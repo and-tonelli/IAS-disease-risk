@@ -173,6 +173,12 @@ BipartiteGraph %>%
 
 # Graphs of target viral families
 vir_tab <- read_csv("Data/vir_tab_long_final.csv")
+path_to_aoh <- "AOH_alien1975_5Km"
+
+# Take all rasters
+r_list <- list.files(path_to_aoh, pattern = ".tif", full.names = TRUE, recursive = TRUE)
+require(tools)
+alien_spp <- file_path_sans_ext(basename(r_list)) %>% str_replace("_", " ")
 
 alien_viruses <- vir_tab %>% pull(virus) %>% unique
 target_fams <- VIRION_DATA %>% filter(Virus %in% alien_viruses) %>% pull(VirusFamily) %>% unique
@@ -187,7 +193,7 @@ VIRION_DATA %>%
   graph_from_incidence_matrix() %>% 
   bipartite.projection() %>% 
   extract2("proj1") %>% 
-  as_tbl_graph %>% # weight is how many viral genera they share
+  as_tbl_graph %>%
   activate(edges) %>% 
   ggraph(layout = "kk") + 
   geom_edge_link(aes(edge_alpha = 0.5), show.legend = FALSE) + 
@@ -203,9 +209,23 @@ host_graph <- VIRION_DATA %>%
   bipartite.projection() %>% 
   extract2("proj1")
 
+host_graph_vir_lev <- VIRION_DATA %>%
+  filter(HostClass == "mammalia",
+         VirusFamily %in% target_fams) %>% 
+  distinct(Host, Virus) %>% 
+  table() %>% 
+  graph_from_incidence_matrix() %>% 
+  bipartite.projection() %>% 
+  extract2("proj1")
+
 host_gen_tab <- VIRION_DATA %>%
   filter(HostClass == "mammalia", VirusGenus %in% target_genera) %>% 
-  select(Host, VirusGenus) %>% 
+  distinct(Host, VirusGenus) %>% 
+  table()
+
+host_vir_tab <- VIRION_DATA %>%
+  filter(HostClass == "mammalia", VirusFamily %in% target_fams) %>% 
+  distinct(Host, Virus) %>% 
   table()
 
 edges <- get.edgelist(host_graph)
@@ -217,39 +237,59 @@ virus_genera <- apply(edges, 1, function(e) {
   paste(shared_gen, collapse = ", ")
 })
 
+edges <- get.edgelist(host_graph_vir_lev)
+virus <- apply(edges, 1, function(e) {
+  shared_vir <- intersect(
+    names(which(host_vir_tab[e[1], ] > 0)),
+    names(which(host_vir_tab[e[2], ] > 0))
+  )
+  paste(shared_vir, collapse = ", ")
+})
+
+VirGenTab <- VIRION_DATA %>% 
+  distinct(Virus, VirusGenus)
+
+VirFamTab <- VIRION_DATA %>% 
+  distinct(Virus, VirusFamily)
+
 # Store Vir Gen in the edge
-E(host_graph)$ViralGen <- virus_genera
+E(host_graph_vir_lev)$Virus <- virus
 
-
-final_host_graph <- as_tibble(as_data_frame(host_graph)) %>%
-  separate_rows(ViralGen, sep = ", ") %>% 
+final_host_graph <- as_tibble(as_data_frame(host_graph_vir_lev)) %>%
+  separate_rows(Virus, sep = ", ") %>% 
+  merge(., VirFamTab) %>%
+  relocate(from, to) %>% 
+  mutate(alien = ifelse(from %in% alien_spp | to %in% alien_spp, 1, 0)) %>% 
   graph_from_data_frame %>% 
   as_tbl_graph
+
 
 edge_counts <- final_host_graph %>%
   activate(edges) %>%
   as_tibble() %>%
-  group_by(ViralGen) %>%
+  group_by(VirusFamily) %>%
   summarise(n_edges = n(), .groups = "drop")
 
 # Join edge_counts to graph
 final_host_graph <- final_host_graph %>%
   activate(edges) %>%
-  left_join(edge_counts, by = "ViralGen") %>%
+  left_join(edge_counts, by = "VirusFamily") %>%
   activate(edges) %>%
-  mutate(ViralGen = paste0(ViralGen, " (", n_edges, " edges)"))
+  mutate(ViralFam = paste0(VirusFamily, " (", n_edges, " edges)"))
 
-set.seed(157)
+set.seed(123)
 ggraph(final_host_graph, layout = "kk") + #fr
-  geom_edge_link(edge_alpha = 0.2, color = "steelblue4") +
   geom_node_point(size = 0.5, color = "grey", alpha = 0.5) +
+  geom_edge_link(edge_alpha = 0.2, aes(color = factor(alien))) +
+  scale_edge_color_manual(values = c("1" = "firebrick", "0" = "steelblue4")) +
   # geom_node_text(aes(label = name), repel = TRUE, size = 3) +
-  facet_wrap(~ViralGen, scales = "free", nrow = 4, ncol = 5) +
+  facet_wrap(~ViralFam, scales = "free", nrow = 3, ncol = 6) +
   theme(strip.text = element_text(
     size = 10))+
-  theme_void()
+  theme_void()+
+  theme(legend.position = "none")
 
-# ggsave("m/ViralGeneraEdges.jpeg", width = 9, height = 6.5, dpi = 600)
+ggsave("m/ViralFamiliesEdges.jpeg", width = 10, height = 5, dpi = 600)
 
 
 # Looking at the filtered rasters ####
@@ -333,5 +373,24 @@ for(i in 1:nrow(ExtentList)){
 }
 
 
+# Alien endemic overlaps (13/94 aliens)
+alien_endemic_network1975_2 <- read_csv("alien_endemic_network1975_2.csv")
 
+alien_endemic_network1975_2 %<>% 
+  filter(Overlapping_Cells != 0)
 
+alien_endemic_network1975_2 %>% 
+  relocate(Alien_Species, Native_Species) %>% 
+  graph_from_data_frame(directed = F) %>% 
+  as_tbl_graph %>% 
+  activate(nodes) %>%
+  mutate(alien = ifelse(name %in% alien_endemic_network1975_2$Alien_Species, 1, 0)) %>% 
+  ggraph(layout = "kk")+
+  geom_edge_link(edge_alpha = 0.2, color = "grey80") +
+  geom_node_point(size = 1, alpha = 0.5, aes(color = factor(alien))) +
+  scale_color_manual(values = c("1" = "firebrick", "0" = "steelblue4")) +
+  geom_node_text(aes(filter = alien == 1, label = name), repel = TRUE, size = 2)+
+  theme_void()+
+  theme(legend.position = "none")
+
+ggsave("m/Alien_endemic_Net_2.jpeg", width = 12, height = 8, dpi = 600)
