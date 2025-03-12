@@ -9,12 +9,18 @@ require(stringr)
 path_to_aoh <- "MAMMALS_5km_final"
 path_to_alien_aoh <- "AOH_invasive/tiffs1975_5Km"
 
-# Loading extent lists
-load("ExtentList_native.RData")
-ExtentList_native
-load("ExtentList_alien.RData")
-ExtentList_alien
+# Loading extent lists (saved as vectors)
+ExtentList_native <- readRDS("ExtentList_native.rds")
+ExtentList_native <- lapply(ExtentList_native, function(coords) {
+  ext(coords[1], coords[2], coords[3], coords[4]) # needed to transform them back to SpatExtent
+})
 
+ExtentList_alien <- readRDS("ExtentList_alien.rds")
+ExtentList_alien <- lapply(ExtentList_alien, function(coords) {
+  ext(coords[1], coords[2], coords[3], coords[4])
+})
+
+# Paths to native and endemic ranges
 set1_paths <- list.files(path_to_aoh, pattern = "\\.tif$", full.names = TRUE, recursive = TRUE) # Native species
 set2_paths <- list.files(path_to_alien_aoh, pattern = "\\.tif$", full.names = TRUE, recursive = TRUE) # Alien species
 
