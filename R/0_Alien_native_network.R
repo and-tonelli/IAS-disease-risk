@@ -10,7 +10,7 @@ path_to_aoh <- "MAMMALS_5km_final"
 path_to_alien_aoh <- "AOH_invasive/tiffs1975_5Km"
 
 # Loading extent lists (saved as vectors)
-ExtentList_native <- readRDS("ExtentList_native.rds")
+ExtentList_native <- readRDS("data/ExtentList_native.rds")
 ExtentList_native <- lapply(ExtentList_native, function(coords) {
   ext(coords[1], coords[2], coords[3], coords[4]) # needed to transform them back to SpatExtent
 })
@@ -51,8 +51,8 @@ colnames(species_combinations) <- c("Native_sp", "Alien_sp")
 
 # Overlap function
 calculate_overlap <- function(species_pair) {
-  sp_n <- species_pair[1] #native
-  sp_a <- species_pair[2] #alien
+  sp_n <- as.character(species_pair$Native_sp) #native
+  sp_a <- as.character(species_pair$Alien_sp) #alien
   
   sparse1 <- sparse_list1[[sp_n]]
   sparse2 <- sparse_list2[[sp_a]]
