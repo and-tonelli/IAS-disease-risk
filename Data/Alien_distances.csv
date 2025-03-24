@@ -1,0 +1,370 @@
+"Binomial","CommonName","Pathway","Landmass","geometry","longitude","latitude","Distance"
+"Antilope cervicapra","Blackbuck","Hunting","Guajaba Island",c(-77.5325809167858, 21.8515063131581),-77.5325809167858,21.8515063131581,14527.9667405185
+"Antilope cervicapra","Blackbuck","Hunting","West Romano Island",c(-78.1676175333706, 22.3610526768421),-78.1676175333706,22.3610526768421,14513.038684935
+"Ammotragus lervia","Aoudad","Hunting, Ornamental Purposes","Europe",c(8.64157977899012, 45.8786223347746),8.64157977899012,45.8786223347746,2290.07649890751
+"Ammotragus lervia","Aoudad","Fauna Improvement, Hunting","Europe",c(16.6190874513258, 43.5156911706559),16.6190874513258,43.5156911706559,2273.89022129121
+"Bettongia penicillata","Woylie","Conservation","Wedge Island",c(136.471439780469, -35.1577770097401),136.471439780469,-35.1577770097401,1853.52221714756
+"Bettongia penicillata","Woylie","Conservation","Saint Peter Island",c(133.585840490456, -32.281506048884),133.585840490456,-32.281506048884,1590.47743202703
+"Bettongia penicillata","Woylie","Conservation","Venus Bay Island",c(134.604520206012, -33.1711773899169),134.604520206012,-33.1711773899169,1678.98930133875
+"Bubalus bubalis","Water Buffalo","Farming","Cuba Island",c(-83.9333661439969, 22.0494971294626),-83.9333661439969,22.0494971294626,NA
+"Eliomys quercinus","Garden Dormouse","Stowaway","Europe",c(9.56072550497568, 55.3377543462343),9.56072550497568,55.3377543462343,799.312902936632
+"Hemitragus jemlahicus","Himalayan Tahr","Hunting","South Island",c(168.240186845357, -45.0995752961568),168.240186845357,-45.0995752961568,12134.0295900865
+"Hemitragus jemlahicus","Himalayan Tahr","Hunting","South Island",c(170.599068296011, -45.2256052724083),170.599068296011,-45.2256052724083,12309.5535252218
+"Hemitragus jemlahicus","Himalayan Tahr","Hunting","South Island",c(170.503464325159, -44.9391807957651),170.503464325159,-44.9391807957651,12290.4210142732
+"Hemitragus jemlahicus","Himalayan Tahr","Hunting","South Island",c(170.331810833622, -44.7462087446494),170.331810833622,-44.7462087446494,12269.6591834178
+"Hemitragus jemlahicus","Himalayan Tahr","Hunting","South Island",c(170.741769317193, -44.6044509553783),170.741769317193,-44.6044509553783,12293.4950206914
+"Hemitragus jemlahicus","Himalayan Tahr","Hunting","South Island",c(170.404439256391, -44.5165154904264),170.404439256391,-44.5165154904264,12265.0658086347
+"Hemitragus jemlahicus","Himalayan Tahr","Hunting","South Island",c(171.854980995438, -42.6080659847844),171.854980995438,-42.6080659847844,12290.9773768851
+"Hippopotamus amphibius","Hippopotamus","Ornamental Purposes","South America",c(-74.3831029978607, 6.23951344825832),-74.3831029978607,6.23951344825832,11241.983189812
+"Lagorchestes hirsutus","Rufous Hare Wallaby","Conservation","Trimouille Island",c(115.562400401156, -20.3953086396604),115.562400401156,-20.3953086396604,570.576257497084
+"Leporillus conditor","Greater Stick-nest Rat","Conservation","Reevesby Island",c(136.287218465557, -34.5264553076),136.287218465557,-34.5264553076,335.702540275056
+"Leporillus conditor","Greater Stick-nest Rat","Conservation","Saint Peter Island",c(133.585840490456, -32.281506048884),133.585840490456,-32.281506048884,20.3306620607567
+"Leporillus conditor","Greater Stick-nest Rat","Conservation","Salutation Island",c(113.762346316016, -26.5375236144495),113.762346316016,-26.5375236144495,2030.58625255558
+"Macaca arctoides","Stump-Tailed Macaque","Research","Guajaba Island",c(-77.5325809167858, 21.8515063131581),-77.5325809167858,21.8515063131581,15098.4616148788
+"Mustela lutreola","European Mink","Conservation","Kunashir Island",c(145.947939627092, 44.1732839203017),145.947939627092,44.1732839203017,9433.31311875902
+"Mustela lutreola","European Mink","Conservation","Iturup Island",c(147.877649144619, 45.0758532769095),147.877649144619,45.0758532769095,9410.53466283822
+"Parantechinus apicalis","Dibbler","Conservation","Escape Island",c(114.981814452571, -30.3321396830957),114.981814452571,-30.3321396830957,585.355443685793
+"Pseudomys fieldi","Djoongari","Conservation","Faure Island",c(113.88397565528, -25.8463130251696),113.88397565528,-25.8463130251696,132.240776896824
+"Pseudomys fieldi","Djoongari","Conservation","North West Island",c(115.523019990504, -20.3628353786041),115.523019990504,-20.3628353786041,557.468394689693
+"Rusa marianna","Philippine Deer","Hunting","Tinian Island",c(145.631909255971, 15.0139129090614),145.631909255971,15.0139129090614,2420.57112987713
+"Rusa timorensis","Javan Deer","Hunting","Borneo Island",c(116.298838522456, -1.48776097474417),116.298838522456,-1.48776097474417,888.69278396899
+"Rusa timorensis","Javan Deer","Hunting","North Island",c(176.775643228256, -38.6168600771937),176.775643228256,-38.6168600771937,7334.10985852969
+"Rusa timorensis","Javan Deer","Hunting","North Island",c(175.139259271312, -39.3314448377013),175.139259271312,-39.3314448377013,7209.07551152225
+"Rusa timorensis","Javan Deer","Hunting","North Island",c(174.753684599256, -37.3779406032728),174.753684599256,-37.3779406032728,7135.80514517921
+"Rusa timorensis","Javan Deer","Hunting","North Island",c(178.153146003271, -37.8536455315312),178.153146003271,-37.8536455315312,7439.82454867707
+"Rusa unicolor","Sambar Deer","Farming","North Island",c(178.165882880804, -37.85635850635),178.165882880804,-37.85635850635,10664.8923644012
+"Rusa unicolor","Sambar Deer","Fauna Improvement, Hunting","Australia",c(142.983090222942, -38.3911259500756),142.983090222942,-38.3911259500756,8055.32939069625
+"Capra aegagrus","Wild Goat","Hunting","Atalandi Island",c(23.0960484033847, 38.6748571273919),23.0960484033847,38.6748571273919,2576.13226171288
+"Capra aegagrus","Wild Goat","Hunting","Sapientza Island",c(21.7050292324958, 36.7697595526242),21.7050292324958,36.7697595526242,2692.62029045747
+"Cephalophus adersi","Aders' Duiker","Conservation","Mnemba Island",c(39.3805362382073, -5.82556398635715),39.3805362382073,-5.82556398635715,319.417606366594
+"Cephalophus adersi","Aders' Duiker","Conservation","Chumbe Island",c(39.1775026946336, -6.27901408972269),39.1775026946336,-6.27901408972269,374.610778437124
+"Cricetomys gambianus","Gambian Rat","Pet","Grass Island",c(-80.9559432096868, 24.7616061287288),-80.9559432096868,24.7616061287288,9502.38076721057
+"Gazella subgutturosa","Goitered Gazelle","Conservation (L)","Um Al Naasan Island",c(50.4029357983437, 26.1467096526181),50.4029357983437,26.1467096526181,2839.64799770286
+"Geocapromys ingrahami","Bahaman Hutia","Conservation","Warderick Wells Island",c(-76.6235484420524, 24.3829768377477),-76.6235484420524,24.3829768377477,374.007777546542
+"Herpestes auropunctatus","Small Indian Mongoose","Biological Control","Kyushu Island",c(130.525330426497, 31.3510219750982),130.525330426497,31.3510219750982,5311.87181496302
+"Herpestes auropunctatus","Small Indian Mongoose","Biological Control","Amami Oshima Island",c(129.426874451971, 28.3123603031268),129.426874451971,28.3123603031268,5276.67416220525
+"Lama glama","Lama","Zoo","Europe",c(11.4079935294212, 43.5429159613401),11.4079935294212,43.5429159613401,NA
+"Manis culionensis","Philippine Pangolin","Pet (L)","Balabac Island",c(117.019489630125, 7.94905536277252),117.019489630125,7.94905536277252,297.558489119676
+"Manis culionensis","Philippine Pangolin","Pet (L)","Apulit Island",c(119.616588615655, 10.9596829748589),119.616588615655,10.9596829748589,142.014925621926
+"Oryctolagus cuniculus","European Rabbit","Hunting","Australia",c(123.470281199388, -18.2049606859229),123.470281199388,-18.2049606859229,14434.0601376733
+"Oryctolagus cuniculus","European Rabbit","Hunting","Drum Island",c(146.654447661921, -38.7266382232426),146.654447661921,-38.7266382232426,17488.7621295553
+"Oryctolagus cuniculus","European Rabbit","Farming, Hunting (L)","Bornholm Island",c(14.9121207889471, 55.1242084331443),14.9121207889471,55.1242084331443,2126.19724113352
+"Oryctolagus cuniculus","European Rabbit","Farming, Hunting (L)","Lolland Island",c(11.4225213524215, 54.782747425652),11.4225213524215,54.782747425652,1941.99631947097
+"Oryctolagus cuniculus","European Rabbit","Fauna Improvement (L)","Oshima Island",c(139.357850519188, 41.5106723339304),139.357850519188,41.5106723339304,10164.2344950333
+"Oryctolagus cuniculus","European Rabbit","Fauna Improvement (L)","Oshima Amakusa Island",c(129.968759747211, 32.1825360008405),129.968759747211,32.1825360008405,10637.29680889
+"Oryctolagus cuniculus","European Rabbit","Farming, Hunting (L)","Rottumerplaat Island",c(6.46677687767721, 53.54284321611),6.46677687767721,53.54284321611,1637.70239318569
+"Oryctolagus cuniculus","European Rabbit","Hunting (L)","Linosa Island",c(12.8630970900401, 35.8627263862397),12.8630970900401,35.8627263862397,1543.25949064729
+"Oryctolagus cuniculus","European Rabbit","Pet","Europe",c(24.8339666821389, 60.3340822248398),24.8339666821389,60.3340822248398,2946.61296199439
+"Oryctolagus cuniculus","European Rabbit","Pet","Juventud Island",c(-82.8404491217426, 21.6775479808293),-82.8404491217426,21.6775479808293,7562.97109530101
+"Oryctolagus cuniculus","European Rabbit","Fauna Improvement (L)","Dogojima Island",c(133.28043886529, 36.2515876947047),133.28043886529,36.2515876947047,10418.0485780758
+"Ovis orientalis","Mouflon","Hunting","Europe",c(15.2100134360201, 59.2059976514025),15.2100134360201,59.2059976514025,NA
+"Ovis orientalis","Mouflon","Hunting","Sapientza Island",c(21.7050292324958, 36.7697595526242),21.7050292324958,36.7697595526242,NA
+"Petrogale persephone","Proserpine Rock Wallaby","Conservation","Hayman Island",c(148.890407398084, -20.05109923745),148.890407398084,-20.05109923745,63.1276086637096
+"Sundasciurus juvencus","Northern Palawan Tree Squirrel","Pet","Apulit Island",c(119.616588615655, 10.9596829748589),119.616588615655,10.9596829748589,115.117348455818
+"Tragulus nigricans","Balabac Mouse Deer","Conservation","Apulit Island",c(119.616588615655, 10.9596829748589),119.616588615655,10.9596829748589,426.654776765884
+"Tragulus nigricans","Balabac Mouse Deer","Conservation","Calauit Island",c(119.896563531852, 12.3006222887317),119.896563531852,12.3006222887317,564.534823226531
+"Herpestes fuscus","Brown Mongoose","Zoo","Viti Levu Island",c(177.972171848089, -17.8359516799443),177.972171848089,-17.8359516799443,11339.805990453
+"Didelphis virginiana","Virginia Opossum","Hunting, Wild Fur","Hornby Island",c(-124.662544308789, 49.5253387705081),-124.662544308789,49.5253387705081,3191.62047215392
+"Didelphis virginiana","Virginia Opossum","Hunting, Wild Fur","Vancouver Island",c(-124.240888530602, 48.8456203042857),-124.240888530602,48.8456203042857,3132.23913759148
+"Chaetophractus villosus","Large Hairy Armadillo","Fauna Improvement, Hunting","Tierra del Fuego Main Island",c(-68.2138210144288, -53.5069700148841),-68.2138210144288,-53.5069700148841,1980.65085789261
+"Erinaceus roumanicus","Northern White-breasted Hedgehog","Pet (L)","Agios Efstratios Island",c(25.0051319080774, 39.5187132365852),25.0051319080774,39.5187132365852,1959.85115295393
+"Boselaphus tragocamelus","Nilgai","Hunting","Cuba Island",c(-77.901600166908, 21.1994944372114),-77.901600166908,21.1994944372114,14498.8056544909
+"Boselaphus tragocamelus","Nilgai","Hunting","Romano Island",c(-78.1676175333706, 22.3610526768421),-78.1676175333706,22.3610526768421,14398.6768546341
+"Callithrix penicillata","Black-pencilled Marmoset","Zoo","Anchieta Island",c(-45.0668763300852, -23.542079640719),-45.0668763300852,-23.542079640719,864.151105438603
+"Callosciurus erythraeus","Pallas's Squirrel","Pet","Europe",c(5.61688904385689, 51.1702917439434),5.61688904385689,51.1702917439434,8596.15175083284
+"Callosciurus erythraeus","Pallas's Squirrel","Pet","Europe",c(3.09306645186996, 50.8405880408956),3.09306645186996,50.8405880408956,8772.11961218915
+"Callosciurus erythraeus","Pallas's Squirrel","Pet","Iki Island",c(129.717892674691, 33.7865366382635),129.717892674691,33.7865366382635,2514.70314654168
+"Callosciurus erythraeus","Pallas's Squirrel","Pet","Fukue Island",c(128.745521589501, 32.6841568410312),128.745521589501,32.6841568410312,2391.89266177955
+"Callosciurus erythraeus","Pallas's Squirrel","Fauna Improvement","South America",c(-60.8649838373291, -32.0658515642126),-60.8649838373291,-32.0658515642126,18481.3627735032
+"Callosciurus erythraeus","Pallas's Squirrel","Fauna Improvement","South America",c(-63.573901182842, -30.8692745772376),-63.573901182842,-30.8692745772376,18770.0592819191
+"Callosciurus erythraeus","Pallas's Squirrel","Pet","Europe",c(8.71611156932176, 45.9387294786106),8.71611156932176,45.9387294786106,8612.26908569906
+"Callosciurus finlaysonii","Finlayson's Squirrel","Pet","Europe",c(8.47312124227888, 44.6739865888482),8.47312124227888,44.6739865888482,9003.2723445277
+"Callosciurus finlaysonii","Finlayson's Squirrel","Pet","Europe",c(15.7048504223231, 40.0054455527187),15.7048504223231,40.0054455527187,8526.75842366347
+"Capra ibex","Alpine Ibex","Conservation, Hunting","Europe",c(13.8026201138095, 46.3965616848685),13.8026201138095,46.3965616848685,514.290836636401
+"Capra ibex","Alpine Ibex","Conservation, Hunting","Europe",c(23.5125062164605, 42.117861313619),23.5125062164605,42.117861313619,1355.40953973504
+"Capra sibirica","Siberian Ibex","Conservation","Asia",c(107.017260421152, 47.8246992825976),107.017260421152,47.8246992825976,1681.19455078992
+"Capreolus capreolus","European Roe Deer","Hunting","Ireland Island",c(-6.30838755649534, 53.1796975754539),-6.30838755649534,53.1796975754539,1812.7062046078
+"Capreolus capreolus","European Roe Deer","Hunting","Ireland Island",c(-6.36872787340718, 54.1126270242527),-6.36872787340718,54.1126270242527,1809.66720482365
+"Castor canadensis","American Beaver","Wild Fur","Asia",c(158.528927129973, 54.9827522391233),158.528927129973,54.9827522391233,5960.91598508245
+"Castor canadensis","American Beaver","Wild Fur","South America",c(-71.3331171935302, -53.5619780735546),-71.3331171935302,-53.5619780735546,11961.3696267354
+"Castor canadensis","American Beaver","Wild Fur","Louise Island",c(-131.775649434479, 52.9549001669597),-131.775649434479,52.9549001669597,1786.4309139788
+"Castor canadensis","American Beaver","Conservation, Zoo","Europe",c(6.25114953630972, 49.9288676313022),6.25114953630972,49.9288676313022,7203.91876192023
+"Cervus nippon","Sika Deer","Hunting","Green Island",c(121.482233682316, 22.6609905913284),121.482233682316,22.6609905913284,2180.99687527593
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North America",c(-84.8106930880737, 38.6352532706205),-84.8106930880737,38.6352532706205,10554.8923087569
+"Cervus nippon","Sika Deer","Hunting","North America",c(-76.2513227893764, 35.618503896521),-76.2513227893764,35.618503896521,11212.8839136266
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-8.13074400456111, 52.3714828412885),-8.13074400456111,52.3714828412885,9440.78060920972
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-7.43107701566847, 53.0126069621212),-7.43107701566847,53.0126069621212,9355.72346391608
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-8.46440088169494, 52.8969903057826),-8.46440088169494,52.8969903057826,9399.29955105545
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-8.92686750704944, 53.4244913003275),-8.92686750704944,53.4244913003275,9361.19458929002
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-9.37488205036162, 53.6051423258567),-9.37488205036162,53.6051423258567,9356.64806788141
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-8.94131958909178, 53.9014100077244),-8.94131958909178,53.9014100077244,9314.38196600779
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-8.47885296373727, 54.1687735255075),-8.47885296373727,54.1687735255075,9274.13549079785
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-7.5466936720071, 54.0242527050842),-7.5466936720071,54.0242527050842,9260.08071989057
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-6.86668254678147, 52.5240004250232),-6.86668254678147,52.5240004250232,9385.55500749928
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-7.55398517704264, 52.1585973653454),-7.55398517704264,52.1585973653454,9443.44175785148
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Ireland Island",c(-6.17334422624213, 55.1738789327841),-6.17334422624213,55.1738789327841,9105.49979197387
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(175.440673594325, -40.6964736028684),175.440673594325,-40.6964736028684,9567.73507083921
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(175.105385886428, -40.9590489653767),175.105385886428,-40.9590489653767,9578.94050145633
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(175.188228448508, -41.0389794989553),175.188228448508,-41.0389794989553,9590.11009899983
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(178.12859500521, -37.8528745663029),178.12859500521,-37.8528745663029,9416.31911619897
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(176.998996469533, -38.1188198920786),176.998996469533,-38.1188198920786,9389.5274805055
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(177.126564595477, -38.1189507688338),177.126564595477,-38.1189507688338,9395.3397601996
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(174.800495810037, -38.3986721787799),174.800495810037,-38.3986721787799,9318.89230895443
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(175.072215937178, -37.1873265238863),175.072215937178,-37.1873265238863,9213.97936722086
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(174.776336543448, -37.3531870396053),174.776336543448,-37.3531870396053,9216.92085217572
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","North Island",c(174.26653326689, -35.305108703374),174.26653326689,-35.305108703374,8996.44721055702
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","South Island",c(170.56167604383, -44.7273841592351),170.56167604383,-44.7273841592351,9773.28499556603
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Great Britain Island",c(-3.6545400531787, 51.9438097927494),-3.6545400531787,51.9438097927494,9333.31710498095
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Great Britain Island",c(1.07607151971447, 52.7650132601097),1.07607151971447,52.7650132601097,9083.41356062395
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Great Britain Island",c(-4.63522748191722, 51.9241363450766),-4.63522748191722,51.9241363450766,9369.30398710922
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Great Britain Island",c(-2.61287298153807, 55.903710689223),-2.61287298153807,55.903710689223,8921.8219668159
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Great Britain Island",c(-4.21292769749966, 54.9844597461819),-4.21292769749966,54.9844597461819,9061.55761679408
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Great Britain Island",c(-5.04770490148706, 54.9730178174593),-5.04770490148706,54.9730178174593,9089.54109606311
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Torsa Island",c(-5.6163006006278, 56.2571962354801),-5.6163006006278,56.2571962354801,8983.43727894393
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Skye Island",c(-6.24603301629453, 57.3628545194889),-6.24603301629453,57.3628545194889,8895.27449511803
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Shuna Island",c(-5.60508531024412, 56.2128374467178),-5.60508531024412,56.2128374467178,8987.37975277832
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Mull Island",c(-6.02132792701654, 56.4472363931993),-6.02132792701654,56.4472363931993,8977.34838526332
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Seil Island",c(-5.6196624505228, 56.2966676567994),-5.6196624505228,56.2966676567994,8979.72650677061
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Luing Island",c(-5.64266695568308, 56.2300294131838),-5.64266695568308,56.2300294131838,8986.86845687173
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(-0.859575140103791, 48.9991663694279),-0.859575140103791,48.9991663694279,9507.4841483006
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(2.45881628942689, 47.7355632749764),2.45881628942689,47.7355632749764,9487.59410942163
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(5.63961028580494, 47.5968191965475),5.63961028580494,47.5968191965475,9359.78216061085
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(6.2358658294663, 46.9317649363099),6.2358658294663,46.9317649363099,9391.26401990212
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(1.42683554078224, 44.8150577563121),1.42683554078224,44.8150577563121,9799.9797245307
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(2.22948723417252, 44.2853076386745),2.22948723417252,44.2853076386745,9812.57399394468
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(2.88078175109492, 43.8748086297692),2.88078175109492,43.8748086297692,9820.20002013961
+"Cervus nippon","Sika Deer","Hunting, Ornamental Purposes","Europe",c(-1.94658954636181, 47.3312152574492),-1.94658954636181,47.3312152574492,9707.32905374534
+"Crocidura russula","White-toothed Shrew","Stowaway","Ireland Island",c(-7.30542282504386, 53.6035183962381),-7.30542282504386,53.6035183962381,1340.14765070652
+"Crocidura russula","White-toothed Shrew","Stowaway","Ireland Island",c(-7.91331337169746, 52.6180051057424),-7.91331337169746,52.6180051057424,1269.04581165879
+"Dama dama","Fallow Deer","Conservation","Sicily Island",c(13.2945973444097, 38.0263026397052),13.2945973444097,38.0263026397052,724.453311289451
+"Dama dama","Fallow Deer","Conservation","Sicily Island",c(14.0465619509032, 37.8701115476401),14.0465619509032,37.8701115476401,691.8862748572
+"Dama dama","Fallow Deer","Conservation","Sardinia Island",c(9.50719930440097, 39.8242528328554),9.50719930440097,39.8242528328554,891.829831032574
+"Dama dama","Fallow Deer","Conservation","Sardinia Island",c(9.01781641159086, 40.124797761592),9.01781641159086,40.124797761592,918.823429113227
+"Dama dama","Fallow Deer","Conservation","Sardinia Island",c(9.52847682147968, 40.5503481031661),9.52847682147968,40.5503481031661,862.748906828313
+"Dama dama","Fallow Deer","Hunting","Europe",c(-8.44190110047242, 38.1535737486224),-8.44190110047242,38.1535737486224,2412.5656886132
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(173.376070394742, -41.840446072681),173.376070394742,-41.840446072681,17861.719451435
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(173.604032928391, -41.8017620829666),173.604032928391,-41.8017620829666,17879.4932195616
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(173.841824738911, -41.7286091296478),173.841824738911,-41.7286091296478,17897.3586788309
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.155569938779, -38.615502200676),175.155569938779,-38.615502200676,17914.874244528
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(176.187798310103, -38.3973266585552),176.187798310103,-38.3973266585552,17991.1206798833
+"Dama dama","Fallow Deer","Hunting","Juventud Island",c(-82.8404491217426, 21.6775479808293),-82.8404491217426,21.6775479808293,9358.59147440298
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.194461823213, -38.6187732660695),175.194461823213,-38.6187732660695,17918.1813467972
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.266700490511, -38.3860604238177),175.266700490511,-38.3860604238177,17915.3382306527
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.510251018024, -38.2762938152116),175.510251018024,-38.2762938152116,17931.0342221584
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(174.751552664729, -38.4919555707435),174.751552664729,-38.4919555707435,17877.1693678332
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.081664915651, -38.2293527379424),175.081664915651,-38.2293527379424,17894.1492221153
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.02421506306, -38.3111753157858),175.02421506306,-38.3111753157858,17892.6178394195
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.07120690623, -38.1197429291905),175.07120690623,-38.1197429291905,17888.9952134272
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.043769748042, -37.940649637077),175.043769748042,-37.940649637077,17879.6036347965
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.101319473473, -37.1995842773761),175.101319473473,-37.1995842773761,17853.0790155817
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(176.592637863274, -38.1663841924363),176.592637863274,-38.1663841924363,18015.1478923755
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.53141468171, -38.4761699094615),177.53141468171,-38.4761699094615,18103.9309102107
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(178.159361279188, -37.8466959413035),178.159361279188,-37.8466959413035,18129.547181645
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.887571986059, -38.1784625499614),177.887571986059,-38.1784625499614,18121.1994687266
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.555748549698, -38.1625994745461),177.555748549698,-38.1625994745461,18093.5331067043
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.256640771657, -38.055213508319),177.256640771657,-38.055213508319,18064.8110094112
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.432237101932, -38.0953969945575),177.432237101932,-38.0953969945575,18080.7502217411
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.132787560648, -38.0530116734566),177.132787560648,-38.0530116734566,18054.6309150503
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(178.03994352395, -38.5902593798785),178.03994352395,-38.5902593798785,18149.8226055752
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.89242058817, -38.7708098385941),177.89242058817,-38.7708098385941,18144.5776652787
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.907833432207, -39.1054887376767),177.907833432207,-39.1054887376767,18157.9447565695
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(177.777066307307, -38.9718823223363),177.777066307307,-38.9718823223363,18142.491526761
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(176.844700699574, -39.1256459306964),176.844700699574,-39.1256459306964,18071.5875739989
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(172.825936365454, -41.7062289021202),172.825936365454,-41.7062289021202,17814.1034967136
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(173.685905292204, -41.3303096684724),173.685905292204,-41.3303096684724,17875.9020073003
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(172.049337841061, -42.4299127134508),172.049337841061,-42.4299127134508,17765.346519385
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(171.851473134513, -43.3371803435331),171.851473134513,-43.3371803435331,17763.8196057429
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(170.562209334321, -43.6553910702077),170.562209334321,-43.6553910702077,17664.8406313016
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(170.434502912303, -43.7808956573636),170.434502912303,-43.7808956573636,17656.2668578319
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(170.11853960955, -43.8733727215838),170.11853960955,-43.8733727215838,17632.2461063048
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(169.187583274702, -44.7793166083994),169.187583274702,-44.7793166083994,17568.2949676028
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(169.433992343495, -45.2626046011415),169.433992343495,-45.2626046011415,17591.370557221
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(168.32887075701, -45.7787567809946),168.32887075701,-45.7787567809946,17508.4365339622
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(167.792743425422, -45.6001155232322),167.792743425422,-45.6001155232322,17465.7680046723
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(169.619622383876, -46.3704972661761),169.619622383876,-46.3704972661761,17609.8022847678
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(169.631182016903, -46.4926991010385),169.631182016903,-46.4926991010385,17610.7528838051
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(169.746004215355, -44.2494200496094),169.746004215355,-44.2494200496094,17607.0690137753
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(172.316673150835, -42.059524088169),172.316673150835,-42.059524088169,17779.9794065108
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(172.433370398541, -41.8954873909214),172.433370398541,-41.8954873909214,17786.1366558804
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(172.622170587429, -40.7213086108786),172.622170587429,-40.7213086108786,17773.8140773391
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(169.735843824501, -44.0898230860619),169.735843824501,-44.0898230860619,17604.4399974852
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(170.759215466365, -45.4117876364193),170.759215466365,-45.4117876364193,17695.6249165896
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(174.867334638657, -37.5480287483808),174.867334638657,-37.5480287483808,17849.0013204595
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(174.630378203396, -37.1462219298818),174.630378203396,-37.1462219298818,17812.3985453929
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(172.027905210581, -41.4513531423245),172.027905210581,-41.4513531423245,17743.3911137568
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(169.222203103122, -46.5631010402013),169.222203103122,-46.5631010402013,17579.4889471407
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(173.423137941323, -42.5095815051759),173.423137941323,-42.5095815051759,17878.0167901051
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(170.73621461503, -45.387704357997),170.73621461503,-45.387704357997,17693.7293177788
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(175.835235335661, -41.1093748098154),175.835235335661,-41.1093748098154,18046.5722715782
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","North Island",c(176.579461740716, -40.1473565612838),176.579461740716,-40.1473565612838,18082.3961043013
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","Quail Island",c(172.693513278268, -43.6302249084372),172.693513278268,-43.6302249084372,17834.9855150978
+"Dama dama","Fallow Deer","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(172.685661439366, -43.6512572028015),172.685661439366,-43.6512572028015,17834.5942399962
+"Dama dama","Fallow Deer","Hunting","Europe",c(13.0432811478603, 41.3384846743153),13.0432811478603,41.3384846743153,554.839228199199
+"Dama dama","Fallow Deer","Conservation","Sardinia Island",c(8.8556373454656, 38.9494848172873),8.8556373454656,38.9494848172873,983.11497494087
+"Dasyprocta leporina","Red-rumped Agouti","Zoo","Anchieta Island",c(-45.0668763300852, -23.542079640719),-45.0668763300852,-23.542079640719,2221.53840013569
+"Dasypus novemcinctus","Nine-banded Armadillo","Zoo","Anchieta Island",c(-45.0668763300852, -23.542079640719),-45.0668763300852,-23.542079640719,3557.18287520123
+"Didelphis aurita","Brazilian Common Opossum","Zoo","Anchieta Island",c(-45.0668763300852, -23.542079640719),-45.0668763300852,-23.542079640719,322.621310778741
+"Erinaceus europaeus","Western European Hedgehog","Biological Control","Benbecula Island",c(-7.31212222452408, 57.4453130560559),-7.31212222452408,57.4453130560559,1380.12348194999
+"Erinaceus europaeus","Western European Hedgehog","Biological Control","North Uist Island",c(-7.29081885399415, 57.5996205308708),-7.29081885399415,57.5996205308708,1382.57624600747
+"Erinaceus europaeus","Western European Hedgehog","Biological Control","Grimsay Island",c(-7.23621437828391, 57.4899333281585),-7.23621437828391,57.4899333281585,1376.73836833785
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(36.5482877185573, 55.5632564953823),36.5482877185573,55.5632564953823,4196.24129162255
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Honshu Island",c(138.595027173025, 36.3076775937259),138.595027173025,36.3076775937259,3238.14642574511
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(12.5015865632973, 41.9317738601118),12.5015865632973,41.9317738601118,6499.83779418365
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(10.7318310391421, 45.3618593018988),10.7318310391421,45.3618593018988,6300.27309566441
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(4.30871446492977, 50.7819150587572),4.30871446492977,50.7819150587572,6152.04180631529
+"Eutamias sibiricus","Siberian Chipmunk","Pet","Europe",c(9.6627732198127, 56.2669385122852),9.6627732198127,56.2669385122852,5465.170882734
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(2.48634968586528, 49.233771125185),2.48634968586528,49.233771125185,6367.67269787224
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(1.9422115974064, 48.9836196408199),1.9422115974064,48.9836196408199,6414.15918173741
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(2.15068533277669, 48.7894146630484),2.15068533277669,48.7894146630484,6421.52715399462
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(2.2983294134127, 48.7685711719385),2.2983294134127,48.7685711719385,6416.58365799242
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(2.21608573544968, 49.0076777614946),2.21608573544968,49.0076777614946,6399.5894530758
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(2.26530865038948, 48.771482995299),2.26530865038948,48.771482995299,6417.84230777964
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(2.26724795516466, 48.7800734448399),2.26724795516466,48.7800734448399,6417.00753589385
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(2.63666265641526, 49.1498886679849),2.63666265641526,49.1498886679849,6368.06211780549
+"Eutamias sibiricus","Siberian Chipmunk","Pet","Europe",c(2.90427978415266, 49.8637280108262),2.90427978415266,49.8637280108262,6294.31332703085
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(9.15218818168273, 49.9757248885527),9.15218818168273,49.9757248885527,5993.02022560944
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(7.20780499103986, 50.631491546209),7.20780499103986,50.631491546209,6030.79065674619
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(5.73438836261502, 51.2367991485711),5.73438836261502,51.2367991485711,6048.58094179804
+"Eutamias sibiricus","Siberian Chipmunk","Fauna Improvement, Pet","Europe",c(4.89809103287059, 51.0856246319682),4.89809103287059,51.0856246319682,6099.52622050023
+"Funambulus pennantii","Five-striped Palm Squirrel","Pet","Guadeloupe Main Island",c(-61.5405478883667, 16.251113869969),-61.5405478883667,16.251113869969,13566.7503576579
+"Funambulus pennantii","Five-striped Palm Squirrel","Pet","Asia",c(54.7865196417298, 24.6686170342479),54.7865196417298,24.6686170342479,2165.7670487967
+"Funambulus pennantii","Five-striped Palm Squirrel","Pet","Asia",c(55.5435888870996, 25.3471306667177),55.5435888870996,25.3471306667177,2085.3896839293
+"Funambulus pennantii","Five-striped Palm Squirrel","Pet","Asia",c(56.0553556559863, 25.8137591859435),56.0553556559863,25.8137591859435,2032.88230761087
+"Funambulus pennantii","Five-striped Palm Squirrel","Pet","Asia",c(56.2716909587506, 25.6092339758437),56.2716909587506,25.6092339758437,2011.52398360663
+"Funambulus pennantii","Five-striped Palm Squirrel","Pet","Asia",c(56.0353524472268, 25.3007124251477),56.0353524472268,25.3007124251477,2036.18408744645
+"Funambulus pennantii","Five-striped Palm Squirrel","Pet","Asia",c(56.3193509911214, 25.0795688419852),56.3193509911214,25.0795688419852,2008.64987135248
+"Hydrochoerus hydrochaeris","Capybara","Zoo","Anchieta Island",c(-45.0668763300852, -23.542079640719),-45.0668763300852,-23.542079640719,1931.39960309479
+"Hystrix cristata","Crested Porcupine","Hunting (L)","Europe",c(8.73925941509204, 45.9349422421798),8.73925941509204,45.9349422421798,3895.78615503633
+"Hystrix cristata","Crested Porcupine","Hunting (L)","Sardinia Island",c(9.54620493420923, 39.7899174059844),9.54620493420923,39.7899174059844,3214.06812076476
+"Hystrix cristata","Crested Porcupine","Hunting (L)","Sardinia Island",c(9.62728104355047, 40.7739707492846),9.62728104355047,40.7739707492846,3319.51410467887
+"Lepus granatensis","Granada Hare","Hunting","Europe",c(2.64789067015775, 42.744878487698),2.64789067015775,42.744878487698,670.322867610671
+"Macaca fascicularis","Nicobar Crab-eating Macaque","Research","Tinjil Island",c(105.789550583762, -6.96264572218405),105.789550583762,-6.96264572218405,1326.01855005441
+"Macaca fascicularis","Nicobar Crab-eating Macaque","Research","Campo Island",c(-82.3044070704947, 21.5787704899607),-82.3044070704947,21.5787704899607,16858.3333732735
+"Macropus eugenii","Tammar Wallaby","Fauna Improvement","North Island",c(113.593589359518, -28.2970105484674),113.593589359518,-28.2970105484674,1216.05727706232
+"Macropus rufogriseus","Red-necked Wallaby","Fauna Improvement, Pet","Lambay Island",c(-6.01550783313774, 53.487586839602),-6.01550783313774,53.487586839602,16828.1809198924
+"Macropus rufogriseus","Red-necked Wallaby","Fauna Improvement, Hunting","South Island",c(170.2154321404, -43.8886024617195),170.2154321404,-43.8886024617195,2322.29313534212
+"Martes americana","American Marten","Conservation","North America",c(-65.0419704400755, 45.6735678689666),-65.0419704400755,45.6735678689666,3380.594125507
+"Martes martes","Pine Marten","Stowaway","Mull Island",c(-6.02071218995237, 56.446660673604),-6.02071218995237,56.446660673604,2456.31534041516
+"Micromys minutus","Eurasian Harvest Mouse","Stowaway","Europe",c(13.3393077038163, 59.0315672810593),13.3393077038163,59.0315672810593,3906.28528643168
+"Micromys minutus","Eurasian Harvest Mouse","Stowaway","Europe",c(23.4955773954579, 66.0855836605692),23.4955773954579,66.0855836605692,3376.65940989988
+"Micromys minutus","Eurasian Harvest Mouse","Stowaway","Europe",c(13.5671592370631, 55.9100601411511),13.5671592370631,55.9100601411511,3968.18763968482
+"Microtus levis","East European Vole","Stowaway","Asia",c(140.283091797974, 48.9660372500706),140.283091797974,48.9660372500706,6643.08397262626
+"Muntiacus reevesi","Reeves' Muntjac","Fauna Improvement, Hunting, Ornamental Purposes","Ireland Island",c(-5.74326585056845, 54.5249245914672),-5.74326585056845,54.5249245914672,8985.82599805501
+"Mustela erminea","Stoat","Biological Control","Strynø Kalv Island",c(10.5792231560228, 54.8982989050193),10.5792231560228,54.8982989050193,621.918474417022
+"Mustela erminea","Stoat","Pet (L)","Orkney Main Island",c(-3.09533445800534, 58.9911251677805),-3.09533445800534,58.9911251677805,1147.91215228414
+"Mustela putorius","Western Polecat/Ferret","Biological Control, Pet","Shetland Main Island",c(-1.34776830537581, 60.2975784354801),-1.34776830537581,60.2975784354801,1765.59892140398
+"Mustela putorius","Western Polecat/Ferret","Biological Control, Pet","La Palma Island",c(-17.8501742002405, 28.6862091585695),-17.8501742002405,28.6862091585695,4309.9789346368
+"Mustela putorius","Western Polecat/Ferret","Pet","Ireland Island",c(-7.23782837821907, 53.5190447263118),-7.23782837821907,53.5190447263118,2068.73229587757
+"Mustela putorius","Western Polecat/Ferret","Biological Control","Rathlin Island",c(-6.21853655333795, 55.2934652891827),-6.21853655333795,55.2934652891827,1981.41796392302
+"Myocastor coypus","Coypu","Fur Farming","Asia",c(128.49879593086, 35.411060659818),128.49879593086,35.411060659818,18908.1950763866
+"Myocastor coypus","Coypu","Fur Farming","North America",c(-71.2494172038094, 42.5624233542957),-71.2494172038094,42.5624233542957,8551.01099216309
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(15.3842112431541, 40.4916180218478),15.3842112431541,40.4916180218478,11562.4411201088
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(16.5687431294671, 39.5753917858365),16.5687431294671,39.5753917858365,11591.9655686988
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(16.7049634579478, 40.2271613545611),16.7049634579478,40.2271613545611,11640.7015007666
+"Myocastor coypus","Coypu","Fur Farming","Sicily Island",c(14.6373472437251, 36.8005837909074),14.6373472437251,36.8005837909074,11281.2744700857
+"Myocastor coypus","Coypu","Fur Farming","Sardinia Island",c(9.65457398593549, 39.9615293594112),9.65457398593549,39.9615293594112,11128.9414805307
+"Myocastor coypus","Coypu","Fur Farming","Sardinia Island",c(8.90910470123068, 39.7098982708472),8.90910470123068,39.7098982708472,11061.1419891111
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(21.0638958123474, 38.7817002713112),21.0638958123474,38.7817002713112,11876.1263744673
+"Myocastor coypus","Coypu","Fur Farming","Corfu Island",c(19.8473952608964, 39.6347823484251),19.8473952608964,39.6347823484251,11834.331769355
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(21.2020509820937, 40.6389074293775),21.2020509820937,40.6389074293775,11990.1378001069
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(24.2238678427134, 40.960978159377),24.2238678427134,40.960978159377,12229.8948517859
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(22.6846920648372, 40.6197566864259),22.6846920648372,40.6197566864259,12097.9930372665
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(22.4629370910116, 40.1671924231851),22.4629370910116,40.1671924231851,12057.0298437395
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(20.354328302382, 39.5175749269011),20.354328302382,39.5175749269011,11865.0097099853
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(22.4664, 37.8593),22.4664,37.8593,11930.2112033555
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(20.8127869201473, 39.1197343517665),20.8127869201473,39.1197343517665,11876.4754460967
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(1.01795189449231, 41.7264886458763),1.01795189449231,41.7264886458763,10684.7821030854
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(-2.07987297229243, 42.3207532452025),-2.07987297229243,42.3207532452025,10539.3244828156
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(19.2749991255638, 42.3472404075236),19.2749991255638,42.3472404075236,11946.8342105469
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(22.4959426729516, 41.9167221824474),22.4959426729516,41.9167221824474,12154.0256064633
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(22.2735347337978, 41.3607023345629),22.2735347337978,41.3607023345629,12107.9174304727
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(23.1949390531492, 41.2336120836179),23.1949390531492,41.2336120836179,12168.4956325751
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(21.5726303306799, 44.7783830371313),21.5726303306799,44.7783830371313,12240.9487976336
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(21.5824814942843, 41.9802673079199),21.5824814942843,41.9802673079199,12091.4200291836
+"Myocastor coypus","Coypu","Fur Farming","Europe",c(28.0622043517986, 43.8639484745449),28.0622043517986,43.8639484745449,12656.2336829215
+"Myocastor coypus","Coypu","Fur Farming","Ireland Island",c(-9.46732293127826, 52.0566856037376),-9.46732293127826,52.0566856037376,10913.5958981527
+"Myocastor coypus","Coypu","Fur Farming","Ireland Island",c(-8.31064634129145, 52.6959494738325),-8.31064634129145,52.6959494738325,11019.1467132041
+"Myocastor coypus","Coypu","Fur Farming","Ireland Island",c(-8.48504614109661, 51.9057595017817),-8.48504614109661,51.9057595017817,10947.2170976355
+"Myodes gapperi","Southern Red-backed Vole","Stowaway","Newfoundland Island",c(-56.0657944483621, 48.725625584298),-56.0657944483621,48.725625584298,2823.92439207997
+"Nasua nasua","Brown-Nosed Coati","Pet","Mallorca Island",c(2.95679212332012, 39.6136486662184),2.95679212332012,39.6136486662184,8344.47092533576
+"Neovison vison","American Mink","Wild Fur","Navarino Island",c(-67.6520663276992, -55.0788281350512),-67.6520663276992,-55.0788281350512,12497.0342422682
+"Neovison vison","American Mink","Fur Farming","Europe",c(2.0545544078861, 42.4316751971706),2.0545544078861,42.4316751971706,7532.96142337274
+"Neovison vison","American Mink","Fur Farming","Europe",c(0.18327941009406, 44.2653358131722),0.18327941009406,44.2653358131722,7279.31820011536
+"Neovison vison","American Mink","Fur Farming","Europe",c(12.3065176839854, 45.885712531623),12.3065176839854,45.885712531623,7710.74256273469
+"Neovison vison","American Mink","Fur Farming","Europe",c(11.949638188531, 44.2995382577701),11.949638188531,44.2995382577701,7840.56684460753
+"Neovison vison","American Mink","Fur Farming","Sardinia Island",c(8.98031578063145, 40.210428457621),8.98031578063145,40.210428457621,8076.22162034571
+"Neovison vison","American Mink","Fur Farming","Sardinia Island",c(9.65316810344383, 40.4495026075575),9.65316810344383,40.4495026075575,8086.90029096038
+"Neovison vison","American Mink","Fur Farming","Europe",c(11.9190192749738, 44.7911710089555),11.9190192749738,44.7911710089555,7794.05228571598
+"Neovison vison","American Mink","Fur Farming","Europe",c(9.46596107219383, 39.9656647169326),9.46596107219383,39.9656647169326,8122.1358223542
+"Neovison vison","American Mink","Fur Farming","Europe",c(21.5531756048819, 40.4906563697225),21.5531756048819,40.4906563697225,8613.76843843763
+"Neovison vison","American Mink","Fur Farming","Europe",c(22.9201029994629, 40.5917220793463),22.9201029994629,40.5917220793463,8659.2073449491
+"Neovison vison","American Mink","Fur Farming","Europe",c(12.8826341030223, 41.9291513494096),12.8826341030223,41.9291513494096,8101.68692457189
+"Neovison vison","American Mink","Fur Farming","Europe",c(12.3922933848458, 44.9160272977266),12.3922933848458,44.9160272977266,7803.59291854402
+"Nyctereutes procyonoides","Raccoon Dog","Fur Farming, Pet, Wild Fur","Funen Island",c(10.3273265381814, 55.3248712609733),10.3273265381814,55.3248712609733,7553.37123616434
+"Nyctereutes procyonoides","Raccoon Dog","Wild Fur","Yakushima Island",c(130.521765561612, 30.339461712465),130.521765561612,30.339461712465,1409.98050947758
+"Nyctereutes procyonoides","Raccoon Dog","Fur Farming, Pet, Wild Fur","Archipelago Sea",c(20.3253257163088, 60.2640078097643),20.3253257163088,60.2640078097643,6757.68114965227
+"Nyctereutes procyonoides","Raccoon Dog","Wild Fur","Hiddensee Island",c(13.1023216162515, 54.5476445448481),13.1023216162515,54.5476445448481,7464.15711097256
+"Odocoileus virginianus","White-tailed Deer","Hunting","Europe",c(15.6845306548603, 50.3756851516119),15.6845306548603,50.3756851516119,8243.4777190068
+"Odocoileus virginianus","White-tailed Deer","Hunting","Europe",c(17.3959368161922, 49.2381898932884),17.3959368161922,49.2381898932884,8417.89452582591
+"Oreamnos americanus","Mountain Goat","Hunting","Revillagigedo Island",c(-131.344912832807, 55.5895950782456),-131.344912832807,55.5895950782456,196.056881541452
+"Ovibos moschatus","Muskox","Conservation","Wrangel Island",c(-69.0771793025077, 71.2060887439803),-69.0771793025077,71.2060887439803,640.703141949904
+"Peromyscus fraterculus","Northern Baja Deermouse","Stowaway","Santa Catalina Island",c(-110.816204041886, 25.6403326907196),-110.816204041886,25.6403326907196,615.911092688568
+"Petrogale rothschildi","Rothschild's Rock Wallaby","Conservation","West Lewis Island",c(116.653132336033, -20.6074253255935),116.653132336033,-20.6074253255935,240.089129765719
+"Procyon lotor","Northen Raccoon","Pet","Europe",c(9.66610324908297, 45.3502210079707),9.66610324908297,45.3502210079707,8189.07745536325
+"Procyon lotor","Northen Raccoon","Pet","Mallorca Island",c(2.95809070422586, 39.6154146572404),2.95809070422586,39.6154146572404,8156.80171533022
+"Procyon lotor","Northen Raccoon","Pet","Shikoku Island",c(133.466519407479, 33.6627959846176),133.466519407479,33.6627959846176,10321.2193951077
+"Procyon lotor","Northen Raccoon","Pet","Hokkaido Island",c(142.571019163057, 43.3833359225646),142.571019163057,43.3833359225646,8986.44078230081
+"Procyon lotor","Northen Raccoon","Pet","Kyushu Island",c(130.872189782717, 32.649773865368),130.872189782717,32.649773865368,10556.0818427644
+"Procyon lotor","Northen Raccoon","Pet, Wild Fur (L)","Saint Martin Island",c(-63.0643128092792, 18.0630262741834),-63.0643128092792,18.0630262741834,4121.61726085908
+"Procyon lotor","Northen Raccoon","Pet","Europe",c(-7.78465286015648, 43.1807052155359),-7.78465286015648,43.1807052155359,7194.02310660632
+"Procyon lotor","Northen Raccoon","Pet","Europe",c(-3.41194960798314, 40.1013311724832),-3.41194960798314,40.1013311724832,7684.5405367573
+"Procyon lotor","Northen Raccoon","Zoo","Europe",c(-0.439895736696238, 44.6884772134822),-0.439895736696238,44.6884772134822,7599.14183458766
+"Rangifer tarandus","Reindeer","Farming","Beaver Island",c(-61.2670208704869, -51.838061475628),-61.2670208704869,-51.838061475628,14315.6891865338
+"Rangifer tarandus","Reindeer","Hunting","Svalbard Island",c(11.755434687176, 78.9116876746791),11.755434687176,78.9116876746791,1631.36269449976
+"Rattus exulans","Polynesian Rat","Stowaway","Formosa Island",c(121.28680909529, 24.1868211959923),121.28680909529,24.1868211959923,2440.0855575836
+"Rattus exulans","Polynesian Rat","Stowaway","Miyakojima Island",c(125.335637173247, 24.7734671959357),125.335637173247,24.7734671959357,2804.38521319421
+"Rattus tanezumi","Oriental House Rat","Stowaway","Africa",c(29.8537902209767, -26.1186442104667),29.8537902209767,-26.1186442104667,10006.506750133
+"Sapajus nigritus","Black-horned Capuchin","Zoo","Anchieta Island",c(-45.0668763300852, -23.542079640719),-45.0668763300852,-23.542079640719,380.536615570755
+"Sciurus carolinensis","Gray Squirrel","Fauna Improvement, Pet","Pitcairn Island",c(-128.317504401051, -24.3629592234651),-128.317504401051,-24.3629592234651,8290.7662696176
+"Sciurus carolinensis","Gray Squirrel","Fauna Improvement, Pet","Europe",c(11.7899621113995, 45.3764440582703),11.7899621113995,45.3764440582703,7615.3812378386
+"Sciurus carolinensis","Gray Squirrel","Fauna Improvement, Pet","Europe",c(9.15201787940996, 45.5969862176931),9.15201787940996,45.5969862176931,7432.89726384402
+"Sciurus carolinensis","Gray Squirrel","Fauna Improvement, Pet","Europe",c(12.3256837308955, 43.1250266674781),12.3256837308955,43.1250266674781,7797.88101818033
+"Sciurus carolinensis","Gray Squirrel","Fauna Improvement, Pet","North America",c(-64.768820892693, 45.3490499098621),-64.768820892693,45.3490499098621,1976.98422200576
+"Sciurus vulgaris","Eurasian Red Squirrel","Pet","Honshu Island",c(139.386653650605, 35.7731965631531),139.386653650605,35.7731965631531,4892.87209126422
+"Suncus etruscus","Pygmy White-toothed Shrew","Stowaway","Tenerife Island",c(-16.5534211313521, 28.2891753436973),-16.5534211313521,28.2891753436973,5655.57591659335
+"Suncus etruscus","Pygmy White-toothed Shrew","Stowaway","Elba Island",c(10.2880165361567, 42.7812373207717),10.2880165361567,42.7812373207717,3119.44426171944
+"Sylvilagus floridanus","Eastern Cottontail","Hunting","Europe",c(12.459176336343, 41.9122959701371),12.459176336343,41.9122959701371,8574.46361471088
+"Sylvilagus floridanus","Eastern Cottontail","Hunting","Europe",c(11.8806827650155, 42.0843561036113),11.8806827650155,42.0843561036113,8524.16926724573
+"Sylvilagus floridanus","Eastern Cottontail","Hunting","Europe",c(11.3798798647337, 42.4557215666482),11.3798798647337,42.4557215666482,8466.95034850338
+"Sylvilagus floridanus","Eastern Cottontail","Hunting","Salt Spring Island",c(-123.497660750883, 48.8144096427542),-123.497660750883,48.8144096427542,3097.73522996083
+"Tamandua tetradactyla","Southern Tamandua","Zoo","Anchieta Island",c(-45.0668763300852, -23.542079640719),-45.0668763300852,-23.542079640719,1995.8227986868
+"Thylogale billardierii","Tasmanian Pademelon","Biological Control","Sarah Island",c(145.44789085213, -42.3899999376304),145.44789085213,-42.3899999376304,106.293276358042
+"Vicugna vicugna","Vicuna","Conservation","South America",c(-78.8218925768986, -1.46118788469135),-78.8218925768986,-1.46118788469135,2144.98687139254
+"Viverra tangalunga","Malay Civet","Hunting","Bacan Island",c(127.563498246935, -0.591780160258694),127.563498246935,-0.591780160258694,2079.27979988549
+"Viverra tangalunga","Malay Civet","Hunting","Halmahera Island",c(128.015277256404, 0.872131988321276),128.015277256404,0.872131988321276,2125.22700989284
+"Vulpes vulpes","Red Fox","Hunting, Wild Fur (L)","Tasmania Island",c(147.334020640298, -41.8157482779168),147.334020640298,-41.8157482779168,12097.8994528405
+"Beatragus hunteri","Hirola","Conservation","Africa",c(38.9600057592845, -3.39966515496567),38.9600057592845,-3.39966515496567,284.076470042236
+"Cervus canadensis","Wapiti","Hunting","Etolin Island",c(-132.424704910879, 56.1291164483089),-132.424704910879,56.1291164483089,8514.1711039619
+"Cervus canadensis","Wapiti","Farming, Fauna Improvement, Hunting, Ornamental Purposes","South Island",c(171.883290083693, -42.4942523500442),171.883290083693,-42.4942523500442,16559.9434509603
+"Axis axis","Chital","Hunting","Dugi Otok Island",c(15.0427691162109, 44.0122925750213),15.0427691162109,44.0122925750213,6428.31375559919
+"Herpestes edwardsii","Indian Grey Mongoose","Biological Control","Abu-Musa Island",c(55.306756679853, 26.2648080380917),55.306756679853,26.2648080380917,1875.31578891859
+"Macaca nemestrina","Southern Pig-tailed Macaque","Research","Cantiles Island",c(-82.0303034765857, 21.6036654242632),-82.0303034765857,21.6036654242632,17255.1963519061
+"Marmota marmota","Alpine Marmot","Hunting","Europe",c(10.1526491919701, 44.3873954917347),10.1526491919701,44.3873954917347,237.491610101146
+"Nanger soemmerringii","Soemmerring's Gazelle","Hunting (L)","Dahlak Norah Island",c(40.0552475648494, 16.0396091025743),40.0552475648494,16.0396091025743,543.694296205541
+"Saimiri sciureus","Squirrel Monkey","Pet","South America",c(-35.1833012613012, -8.72339011319452),-35.1833012613012,-8.72339011319452,2581.15568987161
+"Sarcophilus harrisii","Tasmanian Devil","Conservation","Maria Island",c(148.080752735182, -42.6500919249111),148.080752735182,-42.6500919249111,141.358967629604
+"Dasyurus hallucatus","Northern Quoll","Conservation","Pobassoo Island",c(136.448446666456, -11.9127377440565),136.448446666456,-11.9127377440565,1078.19313993484
+"Dasyurus hallucatus","Northern Quoll","Conservation","Astell Island",c(136.40822201725, -11.8894234448826),136.40822201725,-11.8894234448826,1077.05672111917
+"Bettongia lesueur","Burrowing Bettong","Conservation","Faure Island",c(113.88397565528, -25.8463130251696),113.88397565528,-25.8463130251696,441.092338908108
+"Bettongia lesueur","Burrowing Bettong","Conservation","Boodie Island",c(115.323268115191, -20.9601230433338),115.323268115191,-20.9601230433338,125.481936826851
+"Lagostrophus fasciatus","Banded Hare Wallaby","Conservation","Faure Island",c(113.88397565528, -25.8463130251696),113.88397565528,-25.8463130251696,121.612450693747
+"Potorous gilbertii","Gilbert's Potoroo","Conservation","Bald Island",c(118.45583921865, -34.9210866364039),118.45583921865,-34.9210866364039,25.8738197250807
+"Tragelaphus derbianus","Giant Eland","Hunting","Cuba Island",c(-77.9111886280313, 21.205059676725),-77.9111886280313,21.205059676725,10264.4801778263
+"Ondatra zibethicus","Muskrat","Fur Farming, Wild Fur","Archipelago Sea",c(20.5374669899511, 60.2528618961802),20.5374669899511,60.2528618961802,6756.98451626417
+"Ondatra zibethicus","Muskrat","Fur Farming, Wild Fur","Europe",c(13.3333520584513, 46.2150862425439),13.3333520584513,46.2150862425439,7740.77924509433
+"Ondatra zibethicus","Muskrat","Fur Farming, Wild Fur","Amrum Island",c(8.3391259389933, 54.6540779282885),8.3391259389933,54.6540779282885,6787.52537856976
+"Ondatra zibethicus","Muskrat","Fur Farming, Wild Fur","Föhr Island",c(8.49806407491815, 54.7181418351102),8.49806407491815,54.7181418351102,6788.90493389844
+"Ondatra zibethicus","Muskrat","Fur Farming, Wild Fur","Hooge Island",c(8.54433679053092, 54.5699312718166),8.54433679053092,54.5699312718166,6803.27011710087
+"Ondatra zibethicus","Muskrat","Fur Farming, Wild Fur","East Frisian Archipelago",c(7.23059367924996, 53.6956508410926),7.23059367924996,53.6956508410926,6819.70314330766
+"Ondatra zibethicus","Muskrat","Fur Farming","West Frisian Archipelago",c(6.23633503578341, 53.493314681403),6.23633503578341,53.493314681403,6792.73364043308
+"Suncus murinus","House Shrew","Stowaway","Rodrigues Island",c(63.4209795030751, -19.7136446118714),63.4209795030751,-19.7136446118714,5427.2947505288
