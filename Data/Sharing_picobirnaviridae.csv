@@ -8,10 +8,6 @@
 "Canis lupus","Puma concolor",1
 "Canis lupus","Rattus norvegicus",1
 "Canis lupus","Zalophus californianus",1
-"Capreolus capreolus","Gorilla gorilla",1
-"Capreolus capreolus","Naemorhedus goral",1
-"Capreolus capreolus","Pantholops hodgsonii",1
-"Capreolus capreolus","Rusa unicolor",1
 "Chaetophractus vellerosus","Leopardus geoffroyi",1
 "Chaetophractus vellerosus","Myrmecophaga tridactyla",1
 "Chaetophractus vellerosus","Oligoryzomys nigripes",1
@@ -20,9 +16,6 @@
 "Chaetophractus vellerosus","Puma concolor",1
 "Chaetophractus vellerosus","Rattus norvegicus",1
 "Chaetophractus vellerosus","Zalophus californianus",1
-"Gorilla gorilla","Naemorhedus goral",1
-"Gorilla gorilla","Pantholops hodgsonii",1
-"Gorilla gorilla","Rusa unicolor",1
 "Leopardus geoffroyi","Myrmecophaga tridactyla",1
 "Leopardus geoffroyi","Oligoryzomys nigripes",1
 "Leopardus geoffroyi","Panthera leo",1
@@ -36,8 +29,6 @@
 "Myrmecophaga tridactyla","Puma concolor",1
 "Myrmecophaga tridactyla","Rattus norvegicus",1
 "Myrmecophaga tridactyla","Zalophus californianus",1
-"Naemorhedus goral","Pantholops hodgsonii",1
-"Naemorhedus goral","Rusa unicolor",1
 "Oligoryzomys nigripes","Panthera leo",1
 "Oligoryzomys nigripes","Pongo pygmaeus",1
 "Oligoryzomys nigripes","Puma concolor",1
@@ -47,7 +38,6 @@
 "Panthera leo","Puma concolor",1
 "Panthera leo","Rattus norvegicus",1
 "Panthera leo","Zalophus californianus",1
-"Pantholops hodgsonii","Rusa unicolor",1
 "Pongo pygmaeus","Puma concolor",1
 "Pongo pygmaeus","Rattus norvegicus",1
 "Pongo pygmaeus","Zalophus californianus",1
