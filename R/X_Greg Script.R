@@ -374,7 +374,7 @@ for(i in 1:nrow(ExtentList)){
 
 
 # Alien endemic overlaps (13/94 aliens)
-alien_endemic_network1975_2 <- read_csv("alien_endemic_network1975_2.csv")
+alien_endemic_network1975_2 <- read_csv("Data/alien_endemic_network1975_2.csv")
 
 alien_endemic_network1975_2 %<>% 
   filter(Overlapping_Cells != 0)
@@ -394,3 +394,180 @@ alien_endemic_network1975_2 %>%
   theme(legend.position = "none")
 
 ggsave("m/Alien_endemic_Net_2.jpeg", width = 12, height = 8, dpi = 600)
+
+# Looking at sharing script etc #####
+
+alien_endemic_network1975_2 <- read_csv("Data/alien_endemic_network.csv")
+
+alien_endemic_network1975_2 %<>% 
+  filter(Overlapping_Cells != 0)
+
+alien_endemic_network1975_2 %>% 
+  relocate(Alien_Species, Native_Species) %>% 
+  graph_from_data_frame(directed = F) %>% 
+  as_tbl_graph %>% 
+  activate(nodes) %>%
+  mutate(alien = ifelse(name %in% alien_endemic_network1975_2$Alien_Species, 1, 0)) %>% 
+  ggraph(layout = "kk")+
+  geom_edge_link(edge_alpha = 0.2, color = "grey80") +
+  geom_node_point(size = 1, alpha = 0.5, aes(color = factor(alien))) +
+  scale_color_manual(values = c("1" = "firebrick", "0" = "steelblue4")) +
+  geom_node_text(aes(filter = alien == 1, label = name), repel = TRUE, size = 2)+
+  theme_void()+
+  theme(legend.position = "none")
+
+# Making some models ####
+
+SharingEdgeLists <- 
+  "Data" %>% dir_ls(regex = "Sharing") %>% map(read.csv)
+
+SharingEdgeLists %>% map(nrow)
+
+library(ggregplot)
+
+SharingEdgeLists %>% map(1) %>% map(nunique)
+
+SharingEdgeLists[[1]] %>% write.csv("AAAAAA2.csv")
+
+SharingEdgeLists[[1]] %>% 
+  dplyr::select(1:2) %>% 
+  table() %>% as.matrix %>% object.size
+
+SpatialNetwork <- read.csv("Data/endemic_endemic_network.csv")
+
+SpatialNetwork$Species2 %>% table
+
+SpatialNetwork
+
+DyadSharingEdgeList <- 
+  SharingEdgeLists[[1]] %>% 
+  rename_all(~str_replace(.x, "1$", "A") %>% str_replace("2$", "B")) %>% 
+  bind_rows(SharingEdgeLists[[1]] %>% 
+              rename_all(~str_replace(.x, "1$", "B") %>% str_replace("2$", "A"))) %>% 
+  mutate_at(vars(matches("Species")), ~str_replace(.x, " ", "_"))
+
+DyadSpatialNetwork <- 
+  SpatialNetwork %>% 
+  rename_all(~str_replace(.x, "1$", "A") %>% str_replace("2$", "B")) %>% 
+  bind_rows(SpatialNetwork %>% 
+              rename_all(~str_replace(.x, "1$", "B") %>% str_replace("2$", "A")))
+
+FullEdgeList <- 
+  DyadSpatialNetwork %>% 
+  inner_join(DyadSharingEdgeList, by = c("SpeciesA", "SpeciesB"))
+
+VarNames <- FullEdgeList %>% 
+  dplyr::select(3:ncol(.)) %>% 
+  names
+
+AdjList <- 
+  VarNames %>% 
+  map(function(a){
+    
+    FullEdgeList %>% graph_from_data_frame(directed = F) %>% 
+      get.adjacency(attr = a, sparse = F)
+    
+  })# %>% map(~.x/2)
+
+AdjList[[1]]
+
+FullDataFrame <- 
+  AdjList %>% 
+  map(reshape2::melt) %>% 
+  reduce(~full_join(.x, .y, by = c("Var1", "Var2")))
+
+names(FullDataFrame)[3:7] <- VarNames
+
+FullDataFrame %>% dim
+
+FullDataFrame %>% filter(n_virus == 0) %>% 
+  select_if(is.numeric) %>% 
+  colSums
+
+TestDF <- 
+  FullDataFrame %>% 
+  filter(n_virus>0)
+
+TestDF %>% 
+  ggplot(aes(Overlapping_Cells, n_virus)) +
+  geom_point()
+
+library(cowplot)
+
+theme_set(theme_cowplot())
+
+TestDF %>% 
+  ggplot(aes(Overlapping_Cells, n_virus)) +
+  geom_point() +
+  geom_smooth() +
+  scale_y_log10() +
+  scale_x_log10()
+
+TestDF %>% 
+  ggplot(aes(Overlapping_Cells, n_virus)) +
+  geom_point() +
+  geom_smooth(method = lm) +
+  scale_y_log10() +
+  scale_x_log10()
+
+library(mgcv)
+
+BAM1 <- bam(data = TestDF,
+            n_virus ~ Overlapping_Cells,
+            family = nb()
+            
+)
+
+BAM1 %>% summary
+
+BAM1 %>% plot
+
+BAM2 <- bam(data = TestDF,
+            # n_virus ~ s(Overlapping_Cells),
+            n_virus ~ t2(Overlapping_Cells, Phylogeny),
+            family = nb()
+            
+)
+
+BAM2 %>% summary
+
+BAM2 %>% plot
+
+BAM2 <- bam(data = TestDF,
+            # n_virus ~ s(Overlapping_Cells),
+            n_virus ~ t2(Overlapping_Cells, Phylogeny),
+            family = nb()
+            
+)
+
+BAM2 %>% summary
+
+BAM2 %>% plot
+
+# Multi-membership random effect ####
+
+TestDF %<>% arrange(Var1, Var2)
+
+FullSpecies <- TestDF %>% dplyr::select(1:2) %>% unlist %>%  unique %>% sort
+
+TestDF %<>% mutate_at(c("Var1", "Var2"), ~factor(.x, levels = FullSpecies))
+
+MZ1 <- model.matrix( ~ Var1 - 1, data = TestDF) %>% as.matrix
+MZ2 <- model.matrix( ~ Var2 - 1, data = TestDF) %>% as.matrix
+
+SppMatrix = MZ1 + MZ2
+
+TestDF$Spp <- SppMatrix
+
+ParaPen <- 
+  list(Spp = list(rank = nunique(FullSpecies), 
+                  diag(nunique(FullSpecies))))
+
+BAMMM <- bam(n_virus ~ s(Overlapping_Cells) + Spp,
+             data = TestDF, 
+             family = nb(),
+             paraPen = ParaPen
+)
+
+
+
