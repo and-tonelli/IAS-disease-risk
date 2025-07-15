@@ -5,96 +5,114 @@ require(sf)
 require(terra)
 library(exactextractr)
 library(purrr)
+library(Matrix)
+require(stringr)
 
-raster_files <- list.files("MAMMALS_5km_sum", pattern = ".tif", full.names = TRUE, recursive = TRUE)
+path_to_aoh <- "MAMMALS_5km_final"
 
-res_deg <- 5 / 110.574  
-blank_r <- rast(
-  xmin = -180, xmax = 180,
-  ymin = -90, ymax = 90,
-  resolution = res_deg,
-  crs = "EPSG:4326",
-  vals = NA
-)
+# Take all rasters
+r_list <- list.files(path_to_aoh, pattern = ".tif", full.names = TRUE, recursive = TRUE)
+n <- length(r_list)
 
-Mammals_GADMcountries <- read_csv("Mammals_GADMcountries_final.csv")
+# Read rasters
+rasters <- lapply(r_list, rast)
+print("Finished loading rasters")
 
-endemic_species <- unique(Mammals_GADMcountries$Binomial)
+# Rasters to matrices (1s and 0s -- NAs as 0s)
+to_sparse <- function(r) {
+  v <- values(r, mat = TRUE)
+  v[is.na(v)] <- 0
+  Matrix(v, sparse = TRUE)
+}
 
-# Load rasters and country polygons
-sf_use_s2(FALSE)
+options(future.globals.maxSize = 5 * 1024^3)
 
-tab_overlaps <- NULL
+sparse_list <- lapply(rasters, to_sparse)
+names(sparse_list) <- sapply(rasters, function(x) names(x))
+names(sparse_list) <- str_replace(names(sparse_list), "ex_", "")
 
-for (e_sp1 in endemic_species){
+cell_counts <- sapply(sparse_list, function(m) sum(m != 0))
+
+print("Finished converting rasters to matrices")
+
+# Function to calculate overlap between two matrices
+calculate_overlap <- function(species_pair) {
+  sp_1 <- species_pair[1]
+  sp_2 <- species_pair[2]
   
-  setwd("/data/")
-  path_endemic1 <- raster_files[grep(str_replace(e_sp1, " ", "_"), raster_files)]
-  endemic_rast1 <- rast(paste0(path_endemic1))
+  sparse1 <- sparse_list[[sp_1]]
+  sparse2 <- sparse_list[[sp_2]]
   
-  if (minmax(endemic_rast1)[2] < 2500){
+  overlap <- sum((sparse1 != 0) & (sparse2 != 0))
+  union_cells <- sum((sparse1 != 0) | (sparse2 != 0))
+  
+  if (overlap > 0) {
+    return(data.frame(
+      Species1 = sp_1,
+      Species2 = sp_2,
+      Cells_Species1 = cell_counts[[sp_1]],
+      Cells_Species2 = cell_counts[[sp_2]],
+      Union_Cells = union_cells,
+      Overlapping_Cells = overlap
+    ))
+  } else {
+    return(NULL)
+  }
+}
+
+# All unique species combinations
+species_combinations <- t(combn(names(sparse_list), 2))
+
+# Filter index combinations that do not overlap (non-overlapping extents)
+# Loading extent lists (saved as vectors)
+ExtentList_native <- readRDS("ExtentList_native.rds")
+ExtentList_native <- lapply(ExtentList_native, function(coords) {
+  ext(coords[1], coords[2], coords[3], coords[4]) # needed to transform them back to SpatExtent
+})
+
+BlankMatrix <- matrix(NA, nrow = length(ExtentList_native), ncol = length(ExtentList_native))
+rownames(BlankMatrix) <- names(ExtentList_native)
+colnames(BlankMatrix) <- names(ExtentList_native)
+
+for(i in 1:length(ExtentList_native)){
+  
+  # ExtentList_native[[i]] %>% print
+  
+  for(j in i:length(ExtentList_native)){
     
-    endemic_rast1[endemic_rast1[] < minmax(endemic_rast1)[2]] <- NA
-    endemic_rast1[endemic_rast1[] == minmax(endemic_rast1)[2]] <- 1
+    BlankMatrix[i, j] <- ifelse(is.null(terra::intersect(ExtentList_native[[i]], ExtentList_native[[j]])), 0, 1)
     
   }
   
-  else {
-    
-    endemic_rast1[endemic_rast1[] < 2500] <- NA
-    endemic_rast1[endemic_rast1[] >= 2500] <- 1
-  
-  }
-  
-  endemic_countries <- unique(Mammals_GADMcountries %>% 
-                              filter(Binomial == e_sp1) %>% 
-                              pull(GID_0))
-  
-  country_mammals <- Mammals_GADMcountries %>% filter(GID_0 %in% endemic_countries) %>% pull(Binomial)
-  # country_mammals <- str_replace(country_mammals, "_", " ")
-    
-    for (e_sp2 in country_mammals){
-      
-      setwd("/data/")
-      path_endemic2 <- raster_files[grep(e_sp2, raster_files)]
-      endemic_rast2 <- rast(paste0(path_endemic2))
-      endemic_countries2 <- Mammals_GADMcountries %>% filter(GID_0 %in% endemic_countries, Binomial == e_sp2) %>% pull(GID_0)
-      
-      if (minmax(endemic_rast2)[2] < 2500){
-        
-        endemic_rast2[endemic_rast2[] < minmax(endemic_rast2)[2]] <- NA
-        endemic_rast2[endemic_rast2[] == minmax(endemic_rast2)[2]] <- 1
-        
-      }
-      
-      else {
-        
-        endemic_rast2[endemic_rast2[] < 2500] <- NA
-        endemic_rast2[endemic_rast2[] >= 2500] <- 1
-        
-      }
-      
-      overlap <- terra::mask(endemic_rast1, endemic_rast2) 
-      union <- endemic_rast1+endemic_rast2
-      
-      ncell <- length(overlap[!is.na(overlap)])
-      ncell_tot <- length(union[!is.na(union)])
-      
-      if (ncell > 0){
-        
-        tab_overlaps <- rbind(tab_overlaps, tibble(species1 = e_sp1,
-                                                   species2 = e_sp2,
-                                                   tot_cells = ncell_tot,
-                                                   overlap_cells = ncell,
-                                                   overlap_prop = overlap_cells/tot_cells,
-                                                   countries_overlap = intersect(endemic_countries, endemic_countries2) |> paste(collapse = ", "),
-                                                   ))
-        
-        write.csv(tab_overlaps, "endemic_endemic_overlap.csv", row.names = F)
-        
-      }
-      
-    }
-    
-  }
+}
 
+species_combinations_copy <- cbind(species_combinations, rep(NA, nrow(species_combinations)))
+
+for (n in seq(1:nrow(species_combinations))){
+  sp_1 <- as.character(species_combinations[n, 1])
+  sp_2 <- as.character(species_combinations[n, 2])
+  
+  if (BlankMatrix[sp_1, sp_2] == 1) {
+    
+    species_combinations_copy[n, 3] <- 1
+    
+  } else {
+    
+    species_combinations_copy[n, 3] <- 0
+    
+  }
+}
+
+filtered_combinations <- species_combinations_copy[species_combinations_copy[, 3] == 1, c(1, 2)]
+print(paste0("Finished filtering index combinations: ", nrow(filtered_combinations)))
+
+# Combine results into one dataframe
+overlap_df <- NULL
+for (k in 1:nrow(filtered_combinations)){
+  
+  one_overlap <- calculate_overlap(filtered_combinations[k, ])
+  overlap_df <- rbind(overlap_df, one_overlap)
+  print(paste0(k, "/", nrow(filtered_combinations)))  
+  write.csv(overlap_df, "Data/endemic_endemic_network.csv", row.names = F)
+  
+}
