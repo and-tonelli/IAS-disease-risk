@@ -3,6 +3,8 @@
 [![Preprint](https://img.shields.io/badge/Publication-Preprint-D95C5C)](https://www.researchsquare.com/article/rs-7622438/v1)
 [![App](https://img.shields.io/badge/VirAliNet-App-4A90D9)](https://and-tonelli.github.io/AlienViralSharing_app/)
 
+![banner](./AlienSharingLegend_withnames.svg)
+
 ## Overview
 
 This repository contains the R scripts used to predict and map viral sharing between wild mammals, with a focus on how the establishment of alien species in novel ranges may reshape global viral sharing networks. The pipeline covers the construction of range overlap and viral sharing networks, dataset assembly, machine learning modelling, and the generation of figures and maps.
