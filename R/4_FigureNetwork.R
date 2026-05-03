@@ -139,7 +139,7 @@ Alien_distances <- readRDS("Data/Alien_distances2.rds")
 FinalPredictions
   
 SharingEncounters <- left_join(Alien_distances %>% group_by(Binomial) %>% 
-                                 summarise(mean_dist = mean(Distance)), Fin_predictions, by = c("Binomial"= "Species2"))
+                                 summarise(mean_dist = mean(Distance)), FinalPreds, by = c("Binomial"= "Species2"))
 
 CompleteCentroids <- read_csv("Data/CompleteCentroids.csv")
 CompleteCentroids$Species1 <- str_replace(CompleteCentroids$Species1, "_", " ")
@@ -150,10 +150,10 @@ CompletePoints <- merge.data.frame(CompleteCentroids, Alien_distances[c(1, 10, 1
 
 # Selecting only novel links
 CompletePoints %>% 
-  merge.data.frame(., SharingEncounters[c(1, 3:7)], by.x = c(1, 2), by.y = c(1, 2)) %>% 
+  merge.data.frame(., SharingEncounters2[c(1, 3:7)], by.x = c(1, 2), by.y = c(1, 2)) %>% 
   filter(pred_bin == 1, vir_bin == 0) %>% 
   group_by(Alien, LonA, LatA, LonN, LatN, Landmass) %>% 
-  summarise(n = n()) -> link_data
+  summarise(n = n()) -> link_data2
 
 bbox <- sf::st_union(sf::st_make_grid(
   st_bbox(c(xmin = -180,

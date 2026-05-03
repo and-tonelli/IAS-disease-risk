@@ -4,9 +4,15 @@ library(yardstick)
 require(parsnip)
 require(xgboost)
 
-DatasetMainModel
+# Training dataset
+DatasetMainModel <- read_csv("Data/DatasetMain.csv")
+DatasetMainModel %<>% mutate(log_sum_cit = log10(1 + n_cit1 + n_cit2))
+DatasetMainModel$vir_bin <- as.factor(DatasetMainModel$vir_bin)
 
-Prediction_df_final_ready <- read_csv("Data/Prediction_df_final_ready.csv")
+# Prediction dataset
+Prediction_df_final_ready <- read_csv("Data/DatasetPred.csv")
+
+# Prediction dataset 2 (sum of citations held at median)
 Prediction_df_final_ready2 <- Prediction_df_final_ready %>% 
   mutate(log_sum_cit = median(Prediction_df_final_ready$log_sum_cit))
 
@@ -50,7 +56,7 @@ for (s in round(runif(10, 1, 999), 0)){
   xgb_param <- parameters(xgb_spec) %>%
     
     update(
-      mtry = finalize(mtry(), train_data[c(5:7, 12, 15)]),
+      mtry = finalize(mtry(), train_data[c(5:7, 13, 14)]),
       scale_pos_weight = scale_pos_weight(range = c(0.8, 3))
     )
   
@@ -159,6 +165,8 @@ grep("PredictionMedianCit_", names(.GlobalEnv), value=TRUE) %>%
   summarise(mean_prob = mean(preds),
             sd_prob = sd(preds),
             pred_bin = ifelse(mean_prob >= 0.5, 1, 0)) -> FinalPredictionsMedianCit
+
+saveRDS(FinalPredictionsMedianCit, "Data/FinalPredsMedianCit.rds")
 
 combined_df2 <- mapply(function(x, i) {
   x$id <- i

@@ -23,7 +23,7 @@ Sharing_all <- read_csv("Data/Sharing_all.csv")
 endemic_network <- read.csv("Data/endemic_endemic_network.csv") %>% select(c(1, 2, 6))
 
 # Loading phylo distances
-phylo_dist <- read.csv("data/PHYLACINE_pairwaise_div_time_mammals.csv") %>% select(-3)
+phylo_dist <- read.csv("Data/PHYLACINE_pairwaise_div_time_mammals.csv") %>% select(-3)
 
 # Loading pairwise biological distances
 SpeciesPairsDistances <- read_csv("Data/SpeciesPairsDistances.csv")
@@ -191,5 +191,4 @@ NativeDataset_fin %<>% select(-c(4, 5, 9, 10)) %>%
   rename("trait_sim_mah" = MahDist_alltraits) %>% 
   mutate(trait_sim_mah = 1-trait_sim_mah)
 
-write.csv(NativeDataset_fin, "Data/DatasetMain.csv", row.names = F)
-
+write.csv(NativeDataset_fin, "Data/DatasetMainModel.csv", row.names = F)
