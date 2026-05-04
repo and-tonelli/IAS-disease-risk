@@ -2,7 +2,7 @@
 
 [![Preprint](https://img.shields.io/badge/Publication-Preprint-D95C5C)](https://www.researchsquare.com/article/rs-7622438/v1)
 [![App](https://img.shields.io/badge/VirAliNet-App-4A90D9)](https://and-tonelli.github.io/AlienViralSharing_app/)
-
+[![Zenodo](https://img.shields.io/badge/Zenodo-Data-11557c)]([https://zenodo.org/uploads/16778284](https://zenodo.org/uploads/20027052))
 ![banner](./AlienSharingLegend_withnames.svg)
 
 ## Overview
